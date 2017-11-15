@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="ie lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="ie"> <![endif]-->
+<!--[if IE 10]>        <html class="ie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Welcome to Arc, the Albelli Styleguide</title>
+
+    
+        <link rel="stylesheet" href="//cdn-files.cloud/arc/css/arc.discovery.min.css" />
+        <!--[if IE 8]><link rel="stylesheet" href="//cdn-files.cloud/arc/css/arc-ie8fix.min.css" /><![endif]-->
+        <script type='text/javascript' src="//cdn-files.cloud/arc/js/jquery.arc.min.js"></script>
+        <script type='text/javascript' src="//cdn-files.cloud/arc/js/picturefill.arc.min.js"></script>
+    
+
+    <style>
+        .code-result, .codepen-sample {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+	<div class="row">
+	    <div class="small-12 medium-3 large-3 columns text-center logo">
+		    <a href="./"><img style="width:80px;margin-top:10px;border:none" border="0" src="arc_includes/assets/img/arc-logo-2.png" /></a>
+            <div class="shadow"></div>
+        </div>
+		<div class="small-12 medium-7 large-7 columns text-center">
+		    <h2>ARC - Albelli Resource Core<br>Welcome to our Styleguide</h2>
+		</div>
+		<div class="small-12 medium-2 large-2 columns text-right">
+		    <h6>Version: 2.0.66</h6>
+            
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="small-12 medium-3 large-3 columns">
+			<ul class="side-nav" id="mainmenu">
+                <li><a href="arc_about-arc.html">About ARC</a></li>
+                <li><a href="arc_deprecation-notices.html">Deprecation Notices</a></li>
+                <li><a href="arc_accordion.html">Accordion</a></li>
+                <li><a href="arc_alert-boxes.html">Alerts</a></li>
+                <li><a href="arc_animation.html">Animation</a></li>
+                <li><a href="arc_buttons.html">Buttons</a></li>
+                <li><a href="arc_capabilities.html">Capability classes</a></li>
+                <li><a href="arc_nav-carousel.html">Carousel Navigation</a></li>
+                <li><a href="arc_stickers.html">Discount Stickers</a></li>
+                <li><a href="arc_buttons-dropdown.html">Dropdown Buttons</a></li>
+                <li><a href="arc_forms.html">Forms</a></li>
+                <li><a href="arc_grid.html">Grid</a></li>
+                <li><a href="arc_icons.html">Icons</a></li>
+                <li><a href="arc_slider.html">Image Slider</a></li>
+				<li><a href="arc_lazy-load.html">Image Block & Lazy Load</a></li>
+				<li><a href="arc_modal-boxes.html">Modal Boxes</a></li>
+                <li><a href="arc_modal-alerts.html">Modal Alerts</a></li>
+                <li><a href="arc_notification-bar.html">Notification Bar</a></li>
+                <li><a href="arc_panels.html">Panels</a></li>
+                <li><a href="arc_product-blocks.html">Product Blocks</a></li>
+                <li><a href="arc_pricing-table.html">Pricing Table</a></li>
+                <li><a href="arc_progress-bars.html">Progress indicators</a></li>
+				<li><a href="arc_shopping-basket.html">Shopping Basket</a></li>
+                <li><a href="arc_side-navigation.html">Side Menu</a></li>
+                <li><a href="arc_tables.html">Tables</a></li>
+                <li><a href="arc_tabs-navigation.html">Tabs Navigation</a></li>
+                <li><a href="arc_top-navigation.html">Top Menu</a></li>
+                <li><a href="arc_tooltips.html">Tooltips</a></li>
+                <li><a href="arc_type.html">Typography & Lists</a></li>
+                <!--
+                <li><a href="arc_javascript.html">Javascript</a></li>
+                <li><a href="arc_best-practices.html">Best practices</a></li>
+                <li><a href="arc_contact-support.html">Contact & Support</a></li>
+                -->
+            </ul>
+		</div>
+
+        <div class="small-12 medium-9 large-9 columns">
+            			<style>
+				.row.outside { border: 1px solid #ddd;margin:10px 0 20px 0; }
+				.row.display { background: #FFF; margin-bottom: 0px!important; }
+				.row.display .columns, .row.display .column { background: #FFF; border: none; }
+				.row.display .columns p, .row.display .column p{ background: #E7E7E7; width:100%; margin:5px 0;padding:4px 0; font-size: 13px; font-weight: bold; color: #444; text-align:center;}
+			</style>
+
+			<h1>The Grid</h1>
+			<h4 class="subheader">Albelli's interfaces follow a grid-based design. This makes sure all (UI) designers use the same alignment when creating interfaces.</h4>
+
+			<hr />
+			
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-12 large-12 columns"><p>full width 12 columns</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-6 large-6 columns"><p>6</p></div>
+						<div class="small-6 large-6 columns"><p>6</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-4 large-4 columns"><p>4</p></div>
+						<div class="small-4 large-4 columns"><p>4</p></div>
+						<div class="small-4 large-4 columns"><p>4</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+					</div>
+				</div>
+			</div>
+			
+			<hr />
+			
+			<h4>Description</h4>
+			<p>Albelli's user interfaces use a grid-based design, consisting of 12 columns. This keeps relative sizes of components equal in all browser sizes. Grids therefore make our website's interfaces scalable and it is easier to design for. It also gives designers on the same page when it comes to aligning your designs, as we're all using the same grids.</p>		
+			<hr />
+			<h4>Code, options, actual samples, references</h4>
+			<p>
+				Working with a Grid allows you to create multi-device layouts quickly and easily.<br/>
+				Using a 12-column nestable grid system you can create from rather simple to pretty complex layouts.<br/>
+				To work with different device widths, you have access to two separate grids (small and large). The small grid should be used up to the 768px breakpoint.<br/>
+				If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid.
+			</p>
+			
+			<hr />
+			
+			<h4>Code Samples</h4>
+			<p>Bellow you can find some samples on how to use the grid and it options. Those samples will allow you to easily create page layouts.</p>
+
+			<h5>Nesting</h5>
+			<p>The grid allows for nesting down as far as you'd like, though at a certain point it will get absurd. You can use this nesting to create quite complex layouts, as well as some other tricks like form layouts or visual elements.</p>
+			
+			
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-8 columns"><p>8</p>
+							<div class="row display">
+								<div class="small-8 columns"><p>8 Nested</p>
+									<div class="row display">
+										<div class="small-8 columns"><p>8 Nested Again</p></div>
+										<div class="small-4 columns"><p>4</p></div>
+									</div>
+								</div>
+								<div class="small-4 columns"><p>4</p></div>
+							</div>
+						</div>
+						<div class="small-4 columns"><p>4</p></div>
+					</div>
+				</div>
+			</div>
+						
+			<div class="html">
+				<div class="CodeRay">
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-8 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>8
+    <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-8 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>8 Nested
+        <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+          <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-8 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>8 Nested Again<span class="tag">&lt;/div&gt;</span>
+          <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-4 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4<span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+      <span class="tag">&lt;/div&gt;</span>
+      <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-4 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-4 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+
+			<h5>Offset</h5>
+			<p>Offsets allow you to create additional space between columns in a row. Like the rest of the grid, they're nestable. You can use classes like <code>.large-offset-1</code> and <code>.small-offset-3</code> to manipulate your column positions in different ways. You can offset up to 11 since you wouldn't ever offset a full-width column.</p>
+
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-1 columns"><p>1</p></div>
+						<div class="small-11 columns"><p>11</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-1 columns"><p>1</p></div>
+						<div class="small-10 small-offset-1 columns"><p>10, offset 1</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-1 columns"><p>1</p></div>
+						<div class="small-9 small-offset-1 columns"><p>9, offset 2</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-1 columns"><p>1</p></div>
+						<div class="small-8 small-offset-2 columns"><p>8, offset 3</p></div>
+					</div>
+				</div>
+			</div>
+        
+			<div class="html">
+				<div class="CodeRay">
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-1 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-11 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>11<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-1 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-10 large-offset-1 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10, offset 1<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-1 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-9 large-offset-2 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>9, offset 2<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-1 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>1<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-8 large-offset-3 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>8, offset 3<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			
+			<h5>Centered Columns</h5>
+			<p>Centered columns are placed in the middle of the row. This does not center their content, but centers the grid element, itself. This is accomplished by adding a class of <code>large-centered</code> or <code>small-centered</code> depending on which breakpoint you want the columns to center on. Small versions will carry through all breakpoints if not overridden by a large version. You can center any number of columns you have. To have a column not carry it's small-centered to large, add a class of <code>large-uncentered</code>.</p>
+
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-3 small-centered columns"><p>3 centered</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-6 large-centered columns"><p>6 centered, large</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-9 small-centered large-uncentered columns"><p>9 centered small</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-11 small-centered columns"><p>11 centered</p></div>
+					</div>
+				</div>
+			</div>
+        
+			<div class="html">
+				<div class="CodeRay">
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-3 small-centered columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>3 centered<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-6 large-centered columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>6 centered<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-9 small-centered large-uncentered columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>9 centered<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-11 small-centered columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>11 centered<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<h5>Source Ordering</h5>
+			<p>Using these source ordering classes, you can shift columns around between our breakpoints. This means you can have a sub-nav on the left on large displays, but go below on small ones. <code>.push-#</code> is the syntax you'll use.</p>
+
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-2 push-10 columns"><p>2</p></div>
+						<div class="small-10 pull-2 columns"><p>10, last</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-3 push-9 columns"><p>3</p></div>
+						<div class="small-9 pull-3 columns"><p>9, last</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-4 push-8 columns"><p>4</p></div>
+						<div class="small-8 pull-4 columns"><p>8, last</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-5 push-7 columns"><p>5</p></div>
+						<div class="small-7 pull-5 columns"><p>5, last</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-6 push-6 columns"><p>6</p></div>
+						<div class="small-6 pull-6 columns"><p>6, last</p></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="html">
+				<div class="CodeRay">
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-2 push-10 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>2<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-10 pull-2 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>10, last<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-3 push-9 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>3<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-9 pull-3 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>9, last<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-4 push-8 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>4<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-8 pull-4 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>8, last<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-5 push-7 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-7 pull-5 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>5, last<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-6 push-6 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>6<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-6 pull-6 columns</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>6, last<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+				</div>
+			</div>
+        
+			<hr>
+
+            <h5>Collapsed Rows and columns (no gutter/padding)</h5>
+            <p>When you need to use rows and columns, without space in between</p>
+
+            <div class="row outside collapse">
+                <div class="small-12 large-12 columns">
+                    <div class="row display collapse">
+                        <div class="small-12 large-12 columns collapse">
+                            <p>full width 12 columns</p>
+                        </div>
+                        <div class="small-6 large-6 columns collapse">
+                            <p>6</p>
+                        </div>
+                        <div class="small-6 large-6 columns collapse">
+                            <p>6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="html">
+                <div class="CodeRay">
+                    <div class="code">
+                        <pre>
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row collapse</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-12 large-12 collapse</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>2<span class="tag">&lt;/div&gt;</span>
+
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-6 large-6 collapse</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>3<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-6 large-6 collapse</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>3<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;div</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">row</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+                        </pre>
+
+                     </div>
+                </div>
+            </div>
+            <hr>
+
+			<h5>Block Grid</h5>
+			<p>Block grids give you a way to evenly split contents of a list within the grid. If you wanted to create a row of 5 images or paragraphs that need to stay evenly spaced no matter the screen size, the block grid is for you.</p>
+
+			<div class="row">
+				<div class="small-11 large-11 large-centered small-centered columns">
+					<div class="row">
+						<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-4">
+							<li><img class="th" src="arc_includes/assets/demo/demo1.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo2.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo3.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo4.jpg"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<p>Block grids are made from a <code>ul.small-block-grid-#</code>, <code>ul.medium-block-grid-#</code> or <code>ul.large-block-grid-#</code>. These are ideal for blocked-in content generated by an application, as they do not require rows or even numbers of elements to display correctly.</p>
+
+			<p>These have a bit of flexibility since you have access to two separate grids between our built in 768px breakpoint. If you use the <code>small-block-grid</code> only, the grid will keep its spacing and configuration no matter the screen size. If you use <code>large-block-grid</code> only, the list items will stack on top of each other for small devices. If you use all <code>small</code>, <code>medium</code> and <code>large</code> classes combined, you can control the configuration and layout separately for each breakpoint.</p>
+
+			<p>If you add to the <code>ul</code> a <code>.block-grid-rounded</code> class, the images within the <code>li</code> elements will get rounded corners, a shadow and a css transition hover effect.</p>
+
+			<div class="row">
+				<div class="small-11 large-11 large-centered small-centered columns">
+					<div class="row">
+						<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4 block-grid-rounded">
+							<li><img class="th" src="arc_includes/assets/demo/demo1.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo2.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo3.jpg"></li>
+							<li><img class="th" src="arc_includes/assets/demo/demo4.jpg"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="html">
+				<div class="CodeRay">
+					<div class="code">
+						<pre>
+<span class="comment">&lt;!-- Using only the small-block-grid --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-block-grid-2</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo1.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo2.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo3.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo4.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Using only the large-block-grid --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-block-grid-4</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo1.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo2.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo3.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo4.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Using all block grids together for different layouts --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">small-block-grid-2 medium-block-grid-2 large-block-grid-4</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo1.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo2.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo3.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo4.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Using the .block-grid-rounded class --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">"</span><span class="content">large-block-grid-4 block-grid-rounded</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo1.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo2.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo3.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">"</span><span class="content">cdn/assets/demo/demo4.png</span><span class="delimiter">"</span></span><span class="tag">&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+					</div>
+				</div>
+			</div>
+		
+			<h5>Reference</h5>
+			<p>This component, and the code samples above, uses the following files from the library:</p>
+			<ul class="disc">
+				<li>CSS</li>
+				<li><code>scss/arc/components/_global.scss</code></li>
+				<li><code>scss/arc/components/_variables.scss</code></li>
+				<li><code>scss/arc/components/_grid.scss</code></li>
+				<li><code>scss/arc/components/_block_grid.scss</code></li>
+			</ul>
+        </div>
+
+    </div>
+
+    <div id="demoModal" class="reveal-modal medium">
+        <header>
+            <h3>Lorem ipsum voluptas sit amet</h3>
+        </header>
+        <div class="main text-center">
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <footer class="text-center">
+            <a href="#" class="button small">Let's do it!</a>
+        </footer>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="demoModalBB" class="reveal-modal small">
+        <div class="main text-center">
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    
+        <script src="//cdn-files.cloud/arc/js/arc.discovery.min.js"></script>
+    
+
+    <script type="text/javascript">
+
+        $(document).arc();
+
+        $(document).ready(function() {
+
+    	    var nowurl=window.location.href;
+
+    	    var optionselected=0;
+
+    	    $("#mainmenu li a").each(function(index) {
+
+	    	    pagetocheck=$(this).attr('href');
+
+	    	    if (nowurl.indexOf(pagetocheck)!==-1)
+	    	    {
+	    		    $(this).parent().addClass('active');
+				    optionselected=1;
+	    	    }
+    	    });
+
+    	    if (optionselected==0)
+    	    { $("#mainmenu li:first-child").addClass('active'); }
+
+            // Carousel code
+            $(function() {
+                $('[data-slick]').slick({
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 5,
+                    focusOnSelect: true,
+                    responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    focusOnSelect: true,
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 640,
+                                settings: {
+                                    arrows: false,
+                                    slidesToShow: 3
+                                }
+                            }
+                        ]
+                });
+            });
+            // End Carousel code
+        });
+
+    </script>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+</body>
+</html>

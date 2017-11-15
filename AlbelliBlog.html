@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="ie lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="ie"> <![endif]-->
+<!--[if IE 10]>        <html class="ie"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Welcome to Arc, the Albelli Styleguide</title>
+
+    
+        <!--<link rel="stylesheet" href="//cdn-files.cloud/arc/css/arc.discovery.min.css" />-->
+		
+		<!--<link rel="stylesheet" href="css/arc.discovery.min.css" />     working for local css file -->
+		
+		<link rel="stylesheet" href="http://cdn-files.cloud/arc/css/arc.discovery.min.css" />
+		
+		<link rel="stylesheet" href="css/animate.css" />
+		<!--<link rel="stylesheet" href="https://daneden.github.io/animate.css/" />-->
+		
+		
+		
+        <!--[if IE 8]><link rel="stylesheet" href="//cdn-files.cloud/arc/css/arc-ie8fix.min.css" /><![endif]-->
+        <script type='text/javascript' src="http://cdn-files.cloud/arc/js/jquery.arc.min.js"></script>
+        <script type='text/javascript' src="http://cdn-files.cloud/arc/js/picturefill.arc.min.js"></script>
+		<script type='text/javascript' src="js/lazysizes.min.js"></script>
+		
+    
+
+    <style>
+        .code-result, .codepen-sample {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+	<div class="row">
+	    <div class="small-12 medium-3 large-3 columns text-center logo">
+		    <a href="./"><img style="width:80px;margin-top:10px;border:none" border="0" src="arc_includes/assets/img/arc-logo-2.png" /></a>
+            <div class="shadow"></div>
+        </div>
+		<div class="small-12 medium-7 large-7 columns text-center">
+		    <h2>ARC - Albelli Resource Core<br>Welcome to our Styleguide</h2>
+		</div>
+		<div class="small-12 medium-2 large-2 columns text-right">
+		    <h6>Version: 2.0.66</h6>
+            
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="small-12 medium-3 large-3 columns">
+			<ul class="side-nav" id="mainmenu">
+                <li><a href="arc_about-arc.html">About ARC</a></li>
+                <li><a href="arc_deprecation-notices.html">Deprecation Notices</a></li>
+                <li><a href="arc_accordion.html">Accordion</a></li>
+                <li><a href="arc_alert-boxes.html">Alerts</a></li>
+                <li><a href="arc_animation.html">Animation</a></li>
+                <li><a href="arc_buttons.html">Buttons</a></li>
+                <li><a href="arc_capabilities.html">Capability classes</a></li>
+                <li><a href="arc_nav-carousel.html">Carousel Navigation</a></li>
+                <li><a href="arc_stickers.html">Discount Stickers</a></li>
+                <li><a href="arc_buttons-dropdown.html">Dropdown Buttons</a></li>
+                <li><a href="arc_forms.html">Forms</a></li>
+                <li><a href="arc_grid.html">Grid</a></li>
+                <li><a href="arc_icons.html">Icons</a></li>
+                <li><a href="arc_slider.html">Image Slider</a></li>
+				<li><a href="arc_lazy-load.html">Image Block & Lazy Load</a></li>
+				<li><a href="arc_modal-boxes.html">Modal Boxes</a></li>
+                <li><a href="arc_modal-alerts.html">Modal Alerts</a></li>
+                <li><a href="arc_notification-bar.html">Notification Bar</a></li>
+                <li><a href="arc_panels.html">Panels</a></li>
+                <li><a href="arc_product-blocks.html">Product Blocks</a></li>
+                <li><a href="arc_pricing-table.html">Pricing Table</a></li>
+                <li><a href="arc_progress-bars.html">Progress indicators</a></li>
+				<li><a href="arc_shopping-basket.html">Shopping Basket</a></li>
+                <li><a href="arc_side-navigation.html">Side Menu</a></li>
+                <li><a href="arc_tables.html">Tables</a></li>
+                <li><a href="arc_tabs-navigation.html">Tabs Navigation</a></li>
+                <li><a href="arc_top-navigation.html">Top Menu</a></li>
+                <li><a href="arc_tooltips.html">Tooltips</a></li>
+                <li><a href="arc_type.html">Typography & Lists</a></li>
+                <!--
+                <li><a href="arc_javascript.html">Javascript</a></li>
+                <li><a href="arc_best-practices.html">Best practices</a></li>
+                <li><a href="arc_contact-support.html">Contact & Support</a></li>
+                -->
+            </ul>
+		</div>
+
+        <div class="small-12 medium-9 large-9 columns">
+		
+		 <!--Code to make the Play animation buttons work-->
+			<script type="text/javascript">
+                $(function() {
+					$('.trigger-animation').on('click',function(event)
+					{
+                        event.preventDefault();
+
+                        var elementToAnimate = $(this).data('element');
+                        var animationType = $(this).data('animation');
+                        var animationEnd = $(this).data('animation-end');
+
+						$('.' + elementToAnimate).addClass('animated ' + animationType).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+
+                            $(this).removeClass('animated ' + animationType);
+
+                            if(animationEnd != "")
+                            {
+                            	$(this).removeClass('disabled');
+                            	setTimeout(function(){$(".cta-grey-button-animate").addClass('disabled '); }, 3000);
+                            }
+						});
+
+					});
+                });
+			</script>
+		
+            			<style>
+				.row.outside { border: 1px solid #ddd;margin:10px 0 20px 0; }
+				.row.display { background: #FFF; margin-bottom: 0px!important; }
+				.row.display .columns, .row.display .column { background: #FFF; border: none; }
+				.row.display .columns p, .row.display .column p{ background: #E7E7E7; width:100%; margin:5px 0;padding:4px 0; font-size: 13px; font-weight: bold; color: #444; text-align:center;}
+			</style>
+
+			<h1>The Grid</h1>
+			<h4 class="subheader">Albelli's interfaces follow a grid-based design. This makes sure all (UI) designers use the same alignment when creating interfaces.</h4>
+
+			<hr />
+			
+			<div class="row outside">
+				<div class="small-12 large-12 large-centered small-centered columns">
+					<div class="row display">
+						<div class="small-12 large-12 columns"><p>full width 12 columns</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-6 large-6 columns"><p>6</p></div>
+						<div class="small-6 large-6 columns"><p>6</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-4 large-4 columns"><p>4</p></div>
+						<div class="small-4 large-4 columns"><p>4</p></div>
+						<div class="small-4 large-4 columns"><p>4</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+						<div class="small-3 large-3 columns"><p>3</p></div>
+					</div>
+					<div class="row display">
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+						<div class="small-2 large-2 columns"><p>2</p></div>
+					</div>
+				</div>
+			</div>
+			
+			<hr />
+			
+			<h4>Description</h4>
+			<p>Albelli's user interfaces use a grid-based design, consisting of 12 columns. This keeps relative sizes of components equal in all browser sizes. Grids therefore make our website's interfaces scalable and it is easier to design for. It also gives designers on the same page when it comes to aligning your designs, as we're all using the same grids.</p>		
+			<hr />
+			<h4>Code, options, actual samples, references</h4>
+			<p>
+				Working with a Grid allows you to create multi-device layouts quickly and easily.<br/>
+				Using a 12-column nestable grid system you can create from rather simple to pretty complex layouts.<br/>
+				To work with different device widths, you have access to two separate grids (small and large). The small grid should be used up to the 768px breakpoint.<br/>
+				If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid.
+			</p>
+			
+			<hr />
+			
+			<h4>Code Samples</h4>
+			<p>Bellow you can find some samples on how to use the grid and it options. Those samples will allow you to easily create page layouts.</p>
+
+			<h5>Nesting</h5>
+			<p>The grid allows for nesting down as far as you'd like, though at a certain point it will get absurd. You can use this nesting to create quite complex layouts, as well as some other tricks like form layouts or visual elements.</p>
+			
+			
+			
+		
+            			<h1>Forms</h1>
+			<h4 class="subheader">Forms allow our users to interact with us, as they have the ability to submit information back to us.</h4>
+
+			<hr>
+
+			<form class="custom">
+				<fieldset class="small-12 small-centered large-10 large-centered columns">
+					<h2>Your details</h2>
+					<hr>
+
+					
+				<div class="row">
+					<div class="row">
+						<div class="small-12 large-3 columns">
+							<label class="right inline show-for-medium-up pointer" for="firstname">Title: </label>
+							<label class="left show-for-small">Title:</label>
+						</div>						
+						<div class="small-12 large-6 columns">
+							<span data-tooltip="" data-options="disable_for_touch:true" class="hide-for-small" data-title="Mandatory Field">
+								<input type="text" placeholder="Title" id="Title">
+							</span>
+						</div>
+						<div class="large-3 small-12 columns"></div>						
+					</div>
+					<div class="row">						
+						<div class="small-12 large-3 columns">
+							<label class="right inline show-for-medium-up pointer" for="Content">Content:</label>
+							<label class="left show-for-small pointer" for="Content">Content:</label>
+						</div>
+						<div class="small-12 large-6 columns">
+							<span data-tooltip="" data-options="disable_for_touch:true" class="hide-for-small" data-title="Mandatory Field">
+							<textarea id="Content" placeholder="Content" class="autogrow"></textarea>
+							</span>
+						</div>
+						<div class="large-3 small-12 columns"></div>						
+					</div>
+											
+					
+					<div class="row">
+						<div class="small-12 large-3 columns">
+							<label class="right inline show-for-medium-up pointer" for="UploadImage">Upload Image: </label>
+							<label class="left show-for-small">Upload Image:</label>
+						</div>
+						<div class="small-12 large-6 columns show-for-small">
+							
+							<div class="image-block image-main-thumb">
+								<a href="#" style="display: block;">
+									<img src="http://albumprinter.github.io/arc/arc_includes/assets/demo/demo-slide1.jpg">
+									<div class="shadow"></div>
+									<h3>10 futuristic predictions</h3>
+								</a>
+							</div>
+							
+						<h3>
+							<img class="lazy" src="arc_includes/assets/demo/grey.gif" data-original="cdn/assets/demo/demo-slide1.jpg" width="185" height="100">
+</h3>
+							
+								<input type="file" name="myImage" accept="image/x-png,image/jpeg" />		
+<!-- 							<span data-tooltip="" data-options="disable_for_touch:true" class="hide-for-small" data-title="Mandatory Field">
+ -->							
+								<!--<img data-sizes="auto" data-src="arc_includes/assets/demo/demo-slide1.jpg" data-srcset="arc_includes/assets/demo/demo-slide1.jpg 600w, arc_includes/assets/demo/demo-slide2.jpg 220w, arc_includes/assets/demo/demo-slide3.jpg 300w" class="lazyload"/>-->
+								
+								<!-- <div class="image-block image-main-thumb">
+									<div href="#" style="display: block; height:300px; width:300px;">
+										<img src="http://albumprinter.github.io/arc/arc_includes/assets/demo/demo-slide1.jpg" accept="image/x-png,image/jpeg">
+										<div class="shadow"></div>
+										<h3>10 futuristic predictions</h3>
+									</div>
+								</div> -->
+								
+								
+							<!-- </span> -->
+						</div>
+						<div class="large-3 small-12 columns"></div>
+					</div>
+						
+						
+                    <div class="row">
+                        <div class="large-3 small-12 columns">
+                            <label class="right inline show-for-medium-up pointer" for="email">Email:</label>
+                            <label class="left show-for-small pointer" for="email">Email:</label>
+                        </div>
+                        <div class="large-6 small-12 columns">
+							<span data-tooltip="" data-options="disable_for_touch:true" class="hide-for-small" data-title="Mandatory Field">
+								<input type="email" placeholder="xxx@yyy.com" class="error" id="email" autocapitalize="off" autocorrect="off">
+							</span>
+                        </div>
+                        <div class="large-3 small-12 columns">
+                            <label class="left inline show-for-medium-up">
+                                <small class="error"><i class="small icon form-error"></i> incorrect field</small>
+                            </label>
+                            <label class="left show-for-small">
+                                <small class="error"><i class="small icon form-error"></i> incorrect field</small>
+                            </label>
+                        </div>
+                    </div>
+
+				</div>
+					
+
+					
+
+					<!-- <div class="row bottom-form">
+						<div class="small-12 show-for-small columns" style="text-align:center">
+							<a href="#" class="button">Submit <i class="icon arrow-right"></i></a>
+						</div>
+						<div class="large-offset-3 large-9 columns show-for-medium-up">
+							<a href="#" class="button">Submit <i class="icon arrow-right"></i></a>
+						</div>
+					</div> -->
+
+					<br>
+					
+					<div class="row">
+						
+						<div class="small-12 large-offset-3 large-9 columns">
+							
+							<br>
+							<a href="#" class="small button trigger-animation secondary" data-element="alert-box-animate" data-animation="fadeInRight">Submit Blog</a>
+						</div>
+						<div class="small-12 large-12 columns">
+							<div data-alert="" class="alert-box information alert-box-animate">
+								Your Blog submitting is in process...
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				</fieldset>
+			</form>
+		
+				
+			
+			
+			</div>
+
+			
+        </div>
+		
+		
+		
+		</div>
+	</div>
+	</div>
+			
+			
+			
+
+        <script src="//cdn-files.cloud/arc/js/arc.discovery.min.js"></script>
+    
+
+    <script type="text/javascript">
+
+        $(document).arc();
+
+        $(document).ready(function() {
+
+    	    var nowurl=window.location.href;
+
+    	    var optionselected=0;
+
+    	    $("#mainmenu li a").each(function(index) {
+
+	    	    pagetocheck=$(this).attr('href');
+
+	    	    if (nowurl.indexOf(pagetocheck)!==-1)
+	    	    {
+	    		    $(this).parent().addClass('active');
+				    optionselected=1;
+	    	    }
+    	    });
+
+    	    if (optionselected==0)
+    	    { $("#mainmenu li:first-child").addClass('active'); }
+
+            // Carousel code
+            $(function() {
+                $('[data-slick]').slick({
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 5,
+                    focusOnSelect: true,
+                    responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    focusOnSelect: true,
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 640,
+                                settings: {
+                                    arrows: false,
+                                    slidesToShow: 3
+                                }
+                            }
+                        ]
+                });
+            });
+            // End Carousel code
+        });
+
+    </script>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+</body>
+</html>
